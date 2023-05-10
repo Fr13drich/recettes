@@ -43,7 +43,7 @@ jobs:
             --region us-east-1
   create_inventory: 
     docker:
-      - image: cimg/base:stable
+      - image: amazon/aws-cli
     steps:
       - checkout
       - run: chmod ugo+x createInventory.sh && ./createInventory.sh
