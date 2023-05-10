@@ -20,8 +20,7 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-      		# You can get this ID in the section where you registered the SSH Key
-          	fingerprints: ["b1:a5:c1:d6:46:c5:8c:44:c3:55:af:a2:95:d5:be:db"] 
+          	fingerprints: ["b1:a5:c1:d6:46:c5:8c:44:c3:55:af:a2:95:d5:be:db"]
       - run:
           name: Install Ansible
           command: |
@@ -30,7 +29,6 @@ jobs:
           name: Run Playbook and Configure server
           command: |
             ansible-playbook -i inventory main.yml
-
   create_infrastructure:
     docker:
       - image: amazon/aws-cli
