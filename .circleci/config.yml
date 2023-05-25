@@ -29,7 +29,8 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-            fingerprints: ["b1:a5:c1:d6:46:c5:8c:44:c3:55:af:a2:95:d5:be:db"]
+          fingerprints: ["13:3e:01:b7:38:c8:43:a5:1b:36:14:af:a5:16:9d:d0"]
+        # udacityAnsibleRSAfingerprints: ["b1:a5:c1:d6:46:c5:8c:44:c3:55:af:a2:95:d5:be:db"]
       - run:
           name: Install Ansible
           command: |

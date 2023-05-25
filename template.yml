@@ -7,7 +7,7 @@
        SecurityGroups:
          - !Ref InstanceSecurityGroup
        # Change this, as applicable to you      
-       KeyName: udacityAnsible
+       KeyName: ED25519
        # Change this, as applicable to you
        # You may need to find out what instance types are available in your region - use https://cloud-images.ubuntu.com/locator/ec2/
        ImageId: 'ami-053b0d53c279acc90' 
